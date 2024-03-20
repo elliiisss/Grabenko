@@ -18,18 +18,27 @@ def task2():
 
 
 def task3():
-    a = input("")
+    a = input("Bедите ДД.ММ.ГГГГ")
     b = a.split('.')
     if int(b[0]) * int(b[1]) == int(b[2][-2:]):
-        print("")
+        print(False)
     else:
-        print("")
+        print(True)
 
 
 def task4():
-    a = input("")
+    a = input("Введите номер билета: ")
     k = len(a)
     if k % 2 ==0:
-        s = int(len)
-
+        s = len(a) // 2
+        a1 = list(map(int, a[:s]))
+        a2 = list(map(int, a[-s:]))
+        sum1 = sum(a1)
+        sum2 = sum(a2)
+        if sum1 == sum2:
+            print("Билет счастливый")
+        else:
+            print("Билет несчастливый")
+    else:
+        print("Номер билета введен неправильно")
 
