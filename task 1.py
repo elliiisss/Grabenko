@@ -8,7 +8,7 @@ def task1():
 
 def task2():
     try:
-        a = int(input("Введите число"))
+        a = int(input("Введите число: "))
         b = 200 / a
         print(b)
     except (ValueError):
@@ -18,7 +18,7 @@ def task2():
 
 
 def task3():
-    a = input("Bедите ДД.ММ.ГГГГ")
+    a = input("Bедите ДД.ММ.ГГГГ: ")
     b = a.split('.')
     if int(b[0]) * int(b[1]) == int(b[2][-2:]):
         print(False)
