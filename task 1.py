@@ -30,6 +30,6 @@ def task4():
     a = input("")
     k = len(a)
     if k % 2 ==0:
-        s = int(lrn)
+        s = int(len)
 
 
