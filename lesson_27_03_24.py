@@ -9,7 +9,7 @@ def task2:
     a = [1,4,3,7,5,7,13,24]
     l = len(a)
     for i in range (l):
-        for g in range( i, l):
+        for g in range( i+1, l):
             if a[i] == a[j]:
                 print("Есть уникальные элементы", a[i])
             else:
